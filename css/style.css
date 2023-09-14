@@ -110,6 +110,45 @@ body:hover .curser{
 
 /** ----------------------------------- **/
 
+/** Cards **/
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title_card {
+  color: grey;
+  font-size: 15px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+/** ----------------------------------- **/
 
 .contenedor {
   width: 95%;
@@ -336,13 +375,13 @@ h1, h2, h3, h4, h5, h6, p {
 .main .proyectos .contenedor-proyectos {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
 }
 .main .proyectos .contenedor-proyectos .proyecto {
   margin: auto;
-  width: 250px;
+  width: 300px;
   height: 350px;
 }
 .main .proyectos .contenedor-proyectos .proyecto .info {
