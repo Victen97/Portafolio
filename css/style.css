@@ -153,7 +153,8 @@ h1, h2, h3, h4, h5, h6, p {
     grid-template-columns: 10% auto 10%;
   }
   .menu .contenedor-menu a {
-    font-size: 1.1rem;
+    font-size: 2.1rem;
+    font-family: 'Open Sans', sans-serif;
   }
   .menu .idiomas {
     display: grid;
@@ -161,6 +162,7 @@ h1, h2, h3, h4, h5, h6, p {
   }
 
   .header {
+    margin-top: -5%;
     height: 100vh;
   }
   .header .contenedor-header {
@@ -186,7 +188,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .menu {
-  margin-top: 2rem;
+  margin-top: 0px;
   padding: 0.5rem;
   background: rgba(0, 0, 0, 0.5);
   border-top: 0.1rem solid rgba(86, 86, 86, 0.5);
@@ -203,6 +205,7 @@ h1, h2, h3, h4, h5, h6, p {
   display: flex;
   align-items: center;
   text-align: center;
+  margin-left: 60px;
 }
 .menu .foto img {
   width: 2.5rem;
@@ -292,7 +295,7 @@ h1, h2, h3, h4, h5, h6, p {
 .main .sobre-mi {
   min-height: 100vh;
   padding: 3rem 0;
-  background: #ffffff;
+  background: #e9e2e2;
   color: #000000;
   margin-bottom: 3rem;
 }
@@ -345,7 +348,7 @@ h1, h2, h3, h4, h5, h6, p {
 .main .proyectos .contenedor-proyectos .proyecto .info {
   padding: 1rem 0.5rem;
   height: 10.625rem;
-  background: #ffffff;
+  background: #e9e2e2;
   color: #000000;
   border: 0.125rem solid #969a97;
 }
@@ -387,7 +390,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .main .conocimientos {
   min-height: 100vh;
-  background: #ffffff;
+  background: #e9e2e2;
   color: #000000;
   padding: 3rem 0;
   margin-bottom: 3rem;
@@ -433,7 +436,7 @@ h1, h2, h3, h4, h5, h6, p {
   pointer-events: none;
   border-radius: 50%;
   color: #000000;
-  background: #ffffff;
+  background: #e9e2e2;
   transition: 0.5s;
   text-align: center;
   line-height: 3.125rem;
