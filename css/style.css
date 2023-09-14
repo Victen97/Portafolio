@@ -332,7 +332,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 /** Media Queries **/
 .main .sobre-mi {
-  min-height: 100vh;
+  /**min-height: 100vh;**/
   padding: 3rem 0;
   background: #e9e2e2;
   color: #000000;
@@ -428,7 +428,7 @@ h1, h2, h3, h4, h5, h6, p {
   vertical-align: top;
 }
 .main .conocimientos {
-  min-height: 100vh;
+  /**min-height: 100vh;**/
   background: #e9e2e2;
   color: #000000;
   padding: 3rem 0;
@@ -516,7 +516,7 @@ h1, h2, h3, h4, h5, h6, p {
   line-height: 1.65;
 }
 .main .certificados {
-  min-height: 100vh;
+  /**min-height: 100vh;**/
   padding: 3rem 0;
   margin-bottom: 2rem;
 }
