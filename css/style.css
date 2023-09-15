@@ -250,6 +250,7 @@ button:hover, a:hover {
 }
 /** ----------------------------------- **/
 .contenedor {
+
   width: 95%;
   max-width: 1200px;
   margin: 0 auto;
@@ -431,6 +432,8 @@ h1, h2, h3, h4, h5, h6, p {
 
 /** Media Queries **/
 .main .sobre-mi {
+  display: grid;
+  place-items: center;
   min-height: 80vh;
   padding: 3rem 0;
   background: #e9e2e2;
@@ -527,6 +530,7 @@ h1, h2, h3, h4, h5, h6, p {
   vertical-align: top;
 }
 .main .conocimientos {
+
   min-height: 80vh;
   background: #e9e2e2;
   color: #000000;
@@ -534,7 +538,6 @@ h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 3rem;
 }
 .main .conocimientos .contenedor .contenedor-conocimientos {
-  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(21.875rem, 1fr));
   grid-row-gap: 2rem;
 }
