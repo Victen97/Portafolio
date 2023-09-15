@@ -125,6 +125,22 @@ body:hover .curser{
   font-size: 15px;
 }
 
+.card_skill {
+  overflow: hidden;
+  width: 100%;
+}
+.card_skill img{
+  width:150px;
+  height: auto;
+  filter: saturate(0);
+  transition: .1s ease-in all;
+}
+
+.card_skill img:hover{
+  filter: saturate(100%);
+  transform: scale(1.25);
+}
+
 button {
   border: none;
   outline: 0;
@@ -149,7 +165,90 @@ button:hover, a:hover {
 }
 
 /** ----------------------------------- **/
+:root {
+  --color-text: navy;
+  --color-bg: papayawhip;
+  --color-bg-accent: #ecdcc0;
+  --size: clamp(10rem, 1rem + 40vmin, 30rem);
+  --gap: calc(var(--size) / 14);
+  --duration: 60s;
+  --scroll-start: 0;
+  --scroll-end: calc(-100% - var(--gap));
+}
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text: papayawhip;
+    --color-bg: navy;
+    --color-bg-accent: #2626a0;
+  }
+}
+
+
+
+.marquee {
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
+  mask-image: linear-gradient(
+    var(--mask-direction, to right),
+    hsl(0 0% 0% / 0),
+    hsl(0 0% 0% / 1) 20%,
+    hsl(0 0% 0% / 1) 80%,
+    hsl(0 0% 0% / 0)
+  );
+}
+
+.marquee__group {
+  height: 215px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: var(--gap);
+  min-width: 100%;
+  animation: scroll-x var(--duration) linear infinite;
+}
+
+
+.marquee--reverse .marquee__group {
+  animation-direction: reverse;
+  animation-delay: -3s;
+}
+
+@keyframes scroll-x {
+  from {
+    transform: translateX(var(--scroll-start));
+  }
+  to {
+    transform: translateX(var(--scroll-end));
+  }
+}
+
+
+
+/* Element styles */
+.marquee svg {
+  display: grid;
+  place-items: center;
+  width: var(--size);
+  fill: var(--color-text);
+  background: var(--color-bg-accent);
+  aspect-ratio: 16/9;
+  padding: calc(var(--size) / 10);
+  border-radius: 0.5rem;
+}
+
+/* Parent wrapper */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  margin: auto;
+  max-width: 100vw;
+}
+/** ----------------------------------- **/
 .contenedor {
   width: 95%;
   max-width: 1200px;
@@ -332,7 +431,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 /** Media Queries **/
 .main .sobre-mi {
-  /**min-height: 100vh;**/
+  min-height: 80vh;
   padding: 3rem 0;
   background: #e9e2e2;
   color: #000000;
@@ -428,7 +527,7 @@ h1, h2, h3, h4, h5, h6, p {
   vertical-align: top;
 }
 .main .conocimientos {
-  /**min-height: 100vh;**/
+  min-height: 80vh;
   background: #e9e2e2;
   color: #000000;
   padding: 3rem 0;
@@ -516,7 +615,7 @@ h1, h2, h3, h4, h5, h6, p {
   line-height: 1.65;
 }
 .main .certificados {
-  /**min-height: 100vh;**/
+  min-height: 80vh;
   padding: 3rem 0;
   margin-bottom: 2rem;
 }
